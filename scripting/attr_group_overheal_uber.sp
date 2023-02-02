@@ -54,7 +54,7 @@ public void OnPluginStart() {
 	
 	StartPrepSDKCall(SDKCall_EntityList);
 	PrepSDKCall_SetFromConf(hGameConf, SDKConf_Signature,
-			"CGlobalEntityList::FindEntityInSphere()");
+			"CGlobalEntityList::FindEntityInSphere");
 	PrepSDKCall_SetReturnInfo(SDKType_CBaseEntity, SDKPass_Pointer);
 	PrepSDKCall_AddParameter(SDKType_CBaseEntity, SDKPass_Pointer,
 			VDECODE_FLAG_ALLOWNULL | VDECODE_FLAG_ALLOWWORLD);
