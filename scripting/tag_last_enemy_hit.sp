@@ -102,6 +102,10 @@ void OnTakeDamagePost(int victim, int attacker, int inflictor, float damage,
 	if (!IsValidEntity(weapon) || victim == attacker) {
 		return;
 	}
+
+	if (attacker == 0) {
+        return;
+    }
 	
 	float flDuration = TF2CustAttr_GetFloat(weapon, "tag last enemy hit");
 	if (!flDuration) {
